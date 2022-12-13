@@ -15,4 +15,5 @@ fn main() {
     days::day_9::exec();
     days::day_10::exec();
     days::day_11::exec();
+    days::day_12::exec();
 }
