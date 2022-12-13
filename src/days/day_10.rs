@@ -49,14 +49,14 @@ pub fn exec() {
     println!("A: {part_a}\nB:");
 
     for y in 0..6 {
-        for x in 1..=40 {
-            let index = x + (40 * y);
-            match lit_pixels.get(&index) {
-                None => print!("  "),
-                Some(_) => print!("██"),
-            };
-        }
-        print!("\n");
+        let range = (40 * y)..(40 + (40 * y));
+        let slice: Vec<&str> = range
+            .map(|index| match lit_pixels.get(&index) {
+                None => "  ",
+                Some(_) => "██",
+            })
+            .collect();
+        println!("{}", slice.join(""));
     }
 }
 
