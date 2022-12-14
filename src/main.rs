@@ -44,4 +44,7 @@ fn main() {
     if run_all | args.contains(&"12".to_string()) {
         days::day_12::exec();
     }
+    if run_all | args.contains(&"13".to_string()) {
+        days::day_13::exec();
+    }
 }
