@@ -50,4 +50,15 @@ fn main() {
     if run_all | args.contains(&"14".to_string()) {
         days::day_14::exec();
     }
+    /*
+    if run_all | args.contains(&"15".to_string()) {
+        days::day_15::exec();
+    }
+    if run_all | args.contains(&"16".to_string()) {
+        days::day_16::exec();
+    }
+    if run_all | args.contains(&"17".to_string()) {
+        days::day_17::exec();
+    }
+    */
 }
